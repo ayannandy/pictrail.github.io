@@ -1,1 +1,1 @@
-# pickyrtrail.github.io
+# pictrail.github.io
