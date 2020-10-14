@@ -1,0 +1,397 @@
+ /* css for card page */
+
+
+ .card_container_mobile{
+    position: absolute;
+    top: 6rem;
+    /* left:; */
+    padding: 1rem;
+    /* margin-left: ; */
+    width: 100% ;
+}
+.card_container_pc{
+    position: absolute;
+    top: 6rem;
+    left:2rem;
+    padding: 1rem;
+    margin-left: 4rem ;
+    width: 90% ;
+    height: 120rem;
+}
+
+.card_galary{
+    width: 111%;
+    height: auto;
+    position: absolute;
+    right: -11%;
+    
+}
+.card_galary video{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    
+
+    
+}
+
+
+
+.card_galary img{
+    width: 100%;
+    height: 20rem;
+    /* margin-left: 9rem; */
+}
+.fixedposition{
+    position: fixed;
+    top: 7rem;
+    right: 3rem;
+    width: 30rem;
+    height: 20rem;
+    padding: 1rem;
+}
+.card_price{
+    border: 1px solid black;
+    background-color:white;
+    z-index: 10;
+    width:30vw;
+    
+    
+}
+  
+  .card_price__big{
+    
+    background-color: #e2f2ff;
+    padding:0 1rem ;
+}
+.car_old_price{
+    font-size: 1.4rem;
+}
+.card_actual_price{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.card_actual_price sub{
+    font-size: 1.5rem;
+    font-weight: 350;
+}
+
+.card_price__small{
+    background-color: #efefef;
+    font-size: 1.5rem;
+    padding:0 1rem ;
+    border: 1px solid #e2e2e2;
+}
+
+.card_price button{
+    font-size: 2rem!important;
+    border-radius: 2rem;
+    font-weight: 500;
+    width: 100%;
+}
+
+.for_trip_pc{
+   position: absolute;
+   top:30rem;
+   
+  
+}
+.for_trip_pc p{
+    padding-left: 7rem;
+}
+.for_trip_pc h2{
+    padding-left: 7rem;
+    font-size: 3rem;
+}
+.for_trip{
+    /* position: absolute;
+    
+    left:1rem; */
+   
+   
+}
+.for_trip hr{
+    width: 84%;
+    margin-left: 7rem;
+}
+.trip_type{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.trip_type select,.trip_type select option{
+    border: none;
+    list-style: none;
+    text-align: center;
+    outline: 0;
+}
+.car_type{
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    border: 1px solid black;
+    margin: 0.3rem 0.9rem;
+    border-radius: 20px;
+    padding: 0.5rem;
+}
+.car_type:hover , {
+    /* color: #008cff;
+    font-weight: 700;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid blue;
+    border-radius: 34px; */
+}
+
+.itinerary{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+}
+.Visa{
+    font-size: 2rem;
+    font-weight: 700;
+    /* transition: 1s ease-in; */
+    cursor: pointer;
+    color: black;
+
+}
+ .active2 {
+    color: #008cff!important;
+    font-weight: 700;
+    border-bottom: 2px solid #008cff;
+}
+
+    
+
+
+
+.activity{
+   
+    height: 3rem;
+    background-color: #fafdff;
+    margin-left: 7rem;
+    width: 84%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.plan{
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding:0 2rem ;
+    
+    
+    
+}
+ .active{
+    color: #008cff!important;
+    font-weight: 700;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 34px;
+    
+    
+}
+.datacard{
+    margin-left: 3rem;
+    padding-top: 2rem;
+}
+.datacard ul{
+    list-style: none;
+}
+
+.month{
+ font-size: 1.4rem;
+}
+.day{
+    font-size: 1.4rem;
+    padding: 0.3rem;  
+}
+.day1{
+    font-size: 1.4rem;
+    margin-left:2.8rem;
+}
+
+/* data card patter */
+.datacardbox {
+    padding:2rem 4rem;
+    width: 92%;
+    
+}
+    
+.datacardbox .header{
+    
+    font-size: 2rem;
+    font-weight: 400;
+   
+    background-color: #ebeef2;
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+.datacardbox .header .left{
+    padding-left: 1rem;
+}
+.datacardbox .header .right{
+    padding-right: 1rem;
+    padding-left: 1rem;
+    text-align: right;
+}
+.datacardbox .datacardbody{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-top: none;
+}
+.datacardbody .dataimg{
+    width: 100%;
+    height: auto;
+}
+.datacardbody img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0.5rem;
+}
+.datacardbody .details{
+    width: 100%;
+    height: auto;
+}
+.details .hotel_name{
+    font-size: 2rem;
+    font-weight: 500;
+    padding-left: 1rem;
+}
+.details .loc{
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding-left: 1rem;
+}
+.details .dateH{
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding-left: 1rem;
+}
+.details .date{
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding-left: 1rem;
+}
+
+.datacardbody .dataLastpart{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column  ;
+}
+.highlight p{
+    padding-left: 1rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.highlight ul{
+    list-style:circle;
+    padding-left: 1rem;
+    margin-left: 3rem;
+    font-size: 1.4rem;
+}
+
+#policy{
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
+
+/* route map code */
+
+.routemap{
+    position: relative;
+    font-size: 1.8rem;
+}
+.routemap::before{
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #aaa;
+    display: block;
+}
+.timeline-content{
+    position: relative;
+    padding: 8px 0 16px;
+    min-height: 96px;
+}
+.timeline-content::before{
+    content: "";
+    position: absolute;
+    left: 5;
+    bottom: 0;
+    width: 12px;
+    height: 2px;
+    background-color: #aaa;
+}
+.timeline-content::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 12px;
+    height: 2px;
+    background-color: #aaa;
+}
+.item{
+    position: relative;
+    padding-top:2rem ;
+}
+.item::before{
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 32px;
+    width: 6px;
+    height: 6px;
+    box-shadow: 0 0 0 2px #aaa;
+    background-color: #aaa;
+    border-radius: 100%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+.item span{
+    padding-left: 1.5rem;
+    
+}
+
+@media screen and (max-width: 776px) {
+    
+
+    .card_price{
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .activity{
+        display: none;
+    }
+    .datacardbox {
+        padding:0;
+        
+    }
+
+    
+}    
+

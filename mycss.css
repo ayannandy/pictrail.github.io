@@ -1,0 +1,305 @@
+/* img collector https://source.unsplash.com/1600x900/?nature,travel */
+/* @import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+header{
+    height: 40rem;
+    background-image: url("img/banner.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* background-attachment: fixed; */
+    display: grid;
+    place-items: center;
+   
+
+}
+.cross{
+    text-align: right;
+}
+.navbar{
+    height: 6rem;
+    font-size: 2rem;
+    position: fixed;
+    width: 100vw;
+    padding-right: 2rem;
+    text-align: left;
+    z-index:1000 ;
+}
+.nav_bg{
+    transition: 750ms ease;
+    background:transparent!important;
+}
+.scrolled{
+    background-color: grey!important;
+    z-index: 1000;
+}
+.navbar-brand{
+    font-size: 3rem ;
+    padding-top: 0.2rem;
+    
+  
+    
+}
+.navbar-light{
+    color:#000;
+}
+
+.collapse{
+    right: 0;
+
+}
+.w3-sidebar{
+    display: flex;
+    flex-direction: column;
+    /* background-color: transparent; */
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    height: 100vh;
+    width: auto;
+    z-index: 20000;
+    padding: 1rem;
+    
+    
+}
+
+
+
+.w3-sidebar a {
+    color: red;
+    text-decoration: none;
+    padding: 0.3rem;
+    background-color: white;
+    margin: 0.3rem;
+    border-radius: 2rem;
+
+}
+.w3-sidebar a i{
+    background-color:seashell ;
+    border:0.1rem solid red;
+    padding: 0.2rem;
+}
+
+.w3-sidebar a:hover{
+    border:white;
+    background-color: seashell;
+    border-radius: 1rem;
+}
+
+.w3-teal{
+    background-color: transparent;
+}
+
+
+.nav_white{
+    color:white!important;
+    background-color: gray;
+    
+}
+
+.login{
+    font-size: 1.8rem;
+    position: absolute;
+    right: 5.5rem;
+    font-weight: 500;
+
+}
+
+
+.exp{
+    font-size: 4rem;
+   
+    color: red;
+
+}
+
+#txt{
+    font-size: 3rem;
+    padding:3rem;
+    margin-left: 1rem;
+
+}
+
+
+/* card partiton */
+.card_holder{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.img_container{
+    height: 19rem!important;
+}
+.card-body{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+}
+.img_container{
+    overflow: hidden;
+    height: 15rem;
+    position: relative;
+    
+}
+.img_hover{
+    z-index:100 ;
+    transition: 0.5s ease;
+    position: absolute;
+}
+.card:hover .img_hover
+{
+    transform: scale(1.2);
+}
+
+
+.img_container span{
+    z-index: 1;
+    font-size: 2rem;
+}
+.card-img-top{
+    z-index: 0;
+}
+
+.card-text{
+    font-size: 1.5rem;
+}
+
+.card:hover{
+    box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0 , 0 , 0.5);
+}
+
+.card-img-overla{
+    position: absolute!important;
+   display: flex;
+   justify-content: space-between;
+   color: white;
+    right: 0!important;
+    bottom: 1rem !important;
+    left: 0!important;
+    padding: 1.25rem;
+}
+
+
+
+.c-container{
+    background-color: #000;
+}
+.clints{
+    height: auto;
+    /* width: 100vw; */
+   margin-right: 0!important;
+	
+    background: #000;
+}
+
+.col-4{
+    width:30vw!important;
+}
+
+.c_title{
+    font-size: 2rem;
+    color: white;
+    background-color: #000;
+    padding: 2rem;
+}
+ 
+.clints .row{
+    width: 100vw;
+}
+.clints img {
+    height: 100%;
+    width: 100%;
+	transform: scale(0.7);
+	
+}
+.row2{
+    border-bottom:1px solid white;
+}
+
+.band_logo_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer part */
+footer{
+    background-color: black;
+    
+}
+footer .row{
+    text-align: center;
+}
+footer .f_header{
+    color: rgb(136, 136, 136);
+    font-size: 1.8rem;
+}
+
+footer .f_body a{
+    color :white;
+    font-size: 1.3rem;  
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    height: 4rem;
+    padding-top: 0.7rem;
+    
+}
+.icons i{
+    color: white;
+    font-size: 1.3rem;;
+}
+
+/* for slidebar toggle */
+
+.bag{
+    display: inline;
+}
+
+/* for small devices */
+@media screen and (max-width: 776px) {
+    .w3-border-right{
+        width: 60vw;
+    }
+    .w3-sidebar a {
+        display: none;
+    }
+
+    .card_price{
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .activity{
+        display: none;
+    }
+    .datacardbox {
+        padding:0;
+        
+    }
+
+    
+}    
+
+
+
+
+
+
+
+ 

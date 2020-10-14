@@ -1,0 +1,691 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --color:#EC5B24;
+}
+
+.cross{
+    text-align: right;
+}
+.navbar{
+    height: 6rem;
+    font-size: 2rem;
+    position: relative;
+    width:100vw;
+    text-align: left;
+    z-index:1000 ;
+}
+.nav_bg{
+    transition: 750ms ease;
+    background:transparent!important;
+}
+.scrolled{
+    background-color: grey!important;
+    z-index: 1000;
+}
+.navbar-brand{
+    font-size: 3rem ;
+    padding-top: 0.2rem;
+    
+  
+    
+}
+.navbar-light{
+    color:#000;
+}
+
+.collapse{
+    right: 0;
+
+}
+.w3-sidebar{
+    display: flex;
+    flex-direction: column;
+    /* background-color: transparent; */
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    height: 100vh;
+    width: auto;
+    z-index: 20000;
+    padding: 1rem;
+    
+    
+}
+
+
+
+.w3-sidebar a {
+    color: red;
+    text-decoration: none;
+    padding: 0.3rem;
+    background-color: white;
+    margin: 0.3rem;
+    border-radius: 2rem;
+
+}
+.w3-sidebar a i{
+    background-color:seashell ;
+    border:0.1rem solid red;
+    padding: 0.2rem;
+}
+
+.w3-sidebar a:hover{
+    border:white;
+    background-color: seashell;
+    border-radius: 1rem;
+}
+
+.w3-teal{
+    background-color: transparent;
+}
+
+
+.nav_white{
+    color:white!important;
+    background-color: gray;
+    
+}
+
+.login{
+    font-size: 1.8rem;
+    position: absolute;
+    right: 5.5rem;
+    font-weight: 500;
+
+}
+
+
+.exp{
+    font-size: 4rem;
+   
+    color: red;
+
+}
+
+#txt{
+    font-size: 3rem;
+    padding:3rem;
+    margin-left: 1rem;
+
+}
+
+/* login part */
+.model{
+    font-size: 1.8rem;
+}
+.model .fa{
+    padding: 5px;
+}
+.modal-title{
+    font-size: 2rem;
+}
+.modal-body input{
+    height: 3rem!important;
+    font-size: 1.6rem;
+
+}
+.modal-body button{
+    height: 3rem!important;
+    font-size: 1.8rem;
+    padding-bottom: 3.1rem;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.icons a{
+    text-decoration: none;
+
+}
+.icons .fa-facebook {
+    background: blue;
+    font-size: 5rem;
+    /* border-radius: 50%; */
+    border: none;
+}
+.icons .fa-facebook:hover{
+    background-color: white;
+    color: blue;
+}
+.icons .gmail {
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gmail img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.icons .fa-instagram {
+    background: red;
+    font-size: 5rem;
+    /* border-radius: 50%; */
+    border: none;
+    background-repeat: no-repeat;
+}
+.icons .fa-instagram:hover {
+    background: white;
+    color: red;
+    
+}
+
+/* search bar  */
+
+.mob_search{
+    display: none;
+}
+
+#searchbar{
+    background: linear-gradient(45deg,#721053,#AD2E41);
+    width: auto;
+    height: 8rem;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    
+}
+#searchbar input[type="text"]{
+    width: 100%;
+    height: 4rem;
+    background: transparent;
+    font-size: 1.8rem;
+    border-style: none;
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    padding: 0 1rem;
+   
+}
+#searchbar input[type="date"]{
+    width: 100%;
+    height: 4rem;
+    background: transparent;
+    font-size: 1.8rem;
+    border-style: none;
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    padding: 0 1rem;
+   
+}
+#searchbar input::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 0.1rem;
+    color: red;
+   
+}
+#searchbar .underline{
+    position: relative!important;
+    top: 2px;
+    display: block;
+    width: 100%;
+    
+}
+#searchbar .underline::after ,
+ #searchbar .underline::before {
+    content: '';
+    height: 2px;
+    width: 100%;
+    bottom: 1px;
+    position: absolute!important;
+    background: rgb(255,255,255);
+    padding: 0 1rem;
+    /* -webkit-transition: .2s ease all;
+    transition: .2s ease all; */
+}
+.acti{
+    position: relative!important;
+    top: 2px;
+    display: block;
+    width: 100%;
+}
+.acti::before,
+.acti::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    bottom: 1px;
+    position: absolute!important;
+    background: var(--color);
+    padding: 0 1rem;
+}
+
+
+#searchbar label{
+    color:white;
+    font-size: 1.3rem;
+}
+.no_outline:focus{
+    outline: none;
+}
+#searchbar #searchbtn{
+      background-color: #EC5B24;
+      color: white;
+      font-size: 1.8rem;
+}
+
+.dropdown-menu{
+    width: 92%;
+   
+    
+    font-size: 1.8rem;
+}
+.dropdown-menu .trheaad{
+    background: #FEF9F7;
+    padding: 0;
+    width:100%!important;
+    font-weight: bold;
+    
+    
+
+}
+.dropdown-menu .trheaad span{
+    padding: 2rem 2rem;
+}
+.dropdown-menu #travelertype{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 9rem;
+}
+.dropdown-menu #travelertype span{
+    padding-left: 1rem;
+}
+.dropdown-menu #guestlist{
+
+}
+.dropdown-menu  p{
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    cursor: pointer;
+}
+.dropdown-menu #guestlist .adult .hea{
+    display: inline;
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    padding-left: 1rem;
+    font-weight: 450;
+}
+ .heabody{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 2rem;
+    font-size: 1.8rem;
+}
+.activemem{
+    border: 1px solid orangered;
+}
+#dropdownMenuButton{
+    cursor: pointer;
+}
+#txt{
+    text-align: center;
+}
+#fliter{
+    width: 100%;
+    height: 15rem;
+    font-size: 1.8rem;
+    padding-top: 4rem!important;
+    
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1;
+}
+
+#filter2{
+    width: 100%;
+    height: 10rem;
+    font-size: 1.8rem;
+    padding-top: 3rem;
+    
+    display: none;
+    position: sticky;
+    top: 10rem;
+    background: green;
+    z-index: 1;
+}
+#rati div{
+    border: 1px solid rgb(114, 102, 92);
+    display: inline;
+    cursor: pointer;
+    padding: 4px;
+}
+#rati div:hover{
+    background: #EC5B24;
+    color: white;
+}
+#rati div:hover > i{
+    
+    color: white;
+}
+#rati div i{
+    color:#EC5B24;
+}
+#more{
+    position: absolute;
+    bottom: 0;
+    font-size: 1.5rem;
+    right: 0;
+}
+#more2 {
+    position: absolute;
+    bottom: 0;
+    font-size: 1.5rem;
+    right: 0;
+}
+#more:hover{
+    background:red;
+    color: white;
+}
+
+#fliter select{
+    border: none;
+    list-style: none;
+    text-align: center;
+    outline: 0;
+    text-transform: none;
+}
+#fliter select option{
+    border: none;
+    list-style: none;
+    text-align: center;
+    outline: 0;
+}
+
+.details{
+    border:1px solid rgb(31, 107, 158);
+    box-shadow: 3px 3px 6px  rgba(115, 127, 197, 0.349);
+}
+#carouselExampleControls{
+    margin-top: 3rem!important;
+}
+
+#descrip{
+    margin-top: 3rem!important;
+}
+#descrip h2{
+    font-size: 3rem;
+}
+#descrip p{
+    font-size: 1.9rem;
+}
+#descrip #rateing{
+    font-size: 1.8rem;
+    padding-left: 0.5rem;
+}
+#descrip #offer{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#descrip #offer div{
+    padding: 2rem 1rem;
+}
+#descrip #offer div span{
+    font-size: 1.6rem;
+    padding-left: 0.5rem;
+}
+#descrip #offer div i{
+    font-size: 1.4rem;
+}
+.third_container{
+    position: relative;
+    background: #ddfcf2;
+}
+.third_container #p1{
+    font-size: 1.5rem;
+    color: red;
+    text-align: right;
+}
+
+.third_container #p2{
+    font-size: 1.8rem;
+    text-decoration: line-through;
+    text-align: right;
+    color: #4a4a4a;
+}
+.third_container #p3{
+    font-size: 2.0rem;
+    font-weight: bold;
+    
+    text-align: right;
+}
+.third_container #p4{
+    font-size: 1.0rem;
+    text-align: right;
+}
+    .third_container #p5{
+        font-size: 1.3rem;
+    }
+.third_container #p5 i{
+    
+    padding-right: 1rem;
+}
+.third_container #p6{
+    font-size: 1.3rem;
+}
+.third_container #p6 i{
+    
+    padding-right: 1rem;
+}
+#btn_filter{
+    display: none;
+}
+
+#btn_map{
+    display: none;
+}
+.mob_search{
+    display: none;
+}
+.showmap{
+    display: none;
+}
+.clmap{
+    display: none;
+}
+.carousel{
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 776px) {
+    .login{
+        font-size: 1.8rem;
+        position: absolute;
+        right: 1.5rem!important;
+        font-weight: 500;
+    
+    }
+
+
+    #carouselExampleControls{
+        margin-top: 0!important;
+        height: 100%;
+        width: 100%;
+    }
+
+
+    /* for search bar */
+    #searchbar{
+        display: none;
+    }
+    .mob_search{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+        background-color: #D8E0E6;
+        align-items: center;
+        padding-top: 1rem;
+    }
+    #para{
+        font-weight: bold;
+        font-size: 1.6;
+        margin-bottom: 0!important;
+    }
+    #mob_edit{
+        border: none!important;
+    }
+    #descrip #offer div i{
+        font-size: 1.4rem;
+    }
+
+    
+
+    /* for all hotel lists */
+
+    .details{
+        margin: 0 0 !important;
+        padding-top:1rem;
+        }
+
+
+        /* for filter */
+        #fliter{
+            height: 4rem;
+            padding-top: 1rem!important;
+        }
+        #btn_filter{
+            display: block;
+        }
+        #btn_map{
+            display: block;
+            bottom: 1rem;
+            right: 1rem;
+            position: absolute;
+
+        }
+        #filter2{
+            height: 15rem;
+            top: 20rem!important;
+        }
+
+        #descrip{
+            margin-top: 3rem!important;
+        }
+        #descrip h2{
+            font-size: 1.8rem;
+        }
+        #descrip p{
+            font-size: 1.4rem;
+        }
+        #descrip #rateing{
+            font-size: 1.0rem;
+            padding-left: 0.5rem;
+        }
+        #descrip #offer{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+        #descrip #offer div{
+            padding: 1rem 1rem;
+        }
+        #descrip #offer div span{
+            font-size: 1.2rem;
+            padding-left: 0.5rem;
+        }
+        #descrip #offer div i{
+            font-size: 1.4rem;
+        }
+
+        .third_container{
+            position: relative;
+            background: #ddfcf2;
+            display: flex;
+            justify-content: space-around;
+        }
+        .third_container #p1{
+            font-size: 1.5rem;
+            color: red;
+            text-align: right;
+            margin-top: 0.5rem!important;
+            padding-bottom: 0rem!important;
+            margin-bottom: 0rem!important;
+        }
+        
+        .third_container #p2{
+            font-size: 1.4rem;
+            text-decoration: line-through;
+            text-align: right;
+            color: #4a4a4a;
+            padding-bottom: 0rem!important;
+            margin-bottom: 0rem!important;
+        }
+        .third_container #p3{
+            font-size: 1.6rem;
+            font-weight: bold;
+            padding-bottom: 0rem!important;
+            text-align: right;
+            margin-bottom: 0rem!important;        
+        }
+        .third_container #p4{
+            font-size: 1.0rem;
+            text-align: right;
+            padding-bottom: 0rem!important;
+        }
+            .third_container #p5{
+                font-size: 1.1rem;
+                margin-top: 0rem!important;
+            }
+        .third_container #p5 i{
+            
+            padding-right: 1rem;
+        }
+        .third_container #p6{
+            font-size: 1.1rem;
+        }
+        .third_container #p6 i{
+            
+            padding-right: 1rem;
+        }
+        .mai{
+            position: relative;
+            background: #fff;
+        }
+        .maps{
+        position: absolute!important;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        padding: 1rem 3rem!important;
+        
+     
+        
+        }
+        .showmap{
+            display: block;
+        }
+        .clmap{
+            display: block;
+            z-index: 1000;
+            position: absolute;
+            right: 4rem;
+            top: 1rem;
+        }
+       
+
+
+}
+

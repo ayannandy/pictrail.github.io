@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="mycss.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+
+  <title>Hello, world!</title>
+  <style>
+    .model{
+        font-size: 1.8rem;
+    }
+    .model .fa{
+        padding: 5px;
+    }
+    .modal-title{
+        font-size: 2rem;
+    }
+    .modal-body input{
+        height: 3rem!important;
+        font-size: 1.6rem;
+
+    }
+    .modal-body button{
+        height: 3rem!important;
+        font-size: 1.8rem;
+        padding-bottom: 3.1rem;
+    }
+    .icons{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .icons a{
+        text-decoration: none;
+
+    }
+    .icons .fa-facebook {
+        background: blue;
+        font-size: 5rem;
+        /* border-radius: 50%; */
+        border: none;
+    }
+    .icons .fa-facebook:hover{
+        background-color: white;
+        color: blue;
+    }
+    .icons .gmail {
+        height: 5rem;
+        width: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gmail img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .icons .fa-instagram {
+        background: red;
+        font-size: 5rem;
+        /* border-radius: 50%; */
+        border: none;
+        background-repeat: no-repeat;
+    }
+    .icons .fa-instagram:hover {
+        background: white;
+        color: red;
+        
+    }
+    
+</style>
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light nav_bg bg-dark">
+      <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" id="mySidebar"
+        onmouseenter="hovereffect()" onmouseleave="hoverout()">
+
+        <a href="#" class="w3-bar-item w3-button"><i class="fas mx-3  fa-address-book"></i> <span class="onhover1"
+            style="display:none;">Link 1</span> </a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fas mx-3  fa-address-book"></i> <span class="onhover1"
+            style="display:none;">Link 1</span></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fas mx-3  fa-address-book"></i> <span class="onhover1"
+            style="display:none;">Link 1</span></a>
+      </div>
+      <span class=" " onclick="w3_open()"><i class="fas fa-bars mx-3 btn btn-outline-danger"></i><span
+          class="nav-brand">Brand Name</span></span>
+          <button type="button" class="btn btn-outline-danger  login" data-toggle="modal" data-target="#exampleModal">
+            Login
+          </button>
+
+    </nav>
+    <div class="text-center exp">Explore</div>
+  </header>
+
+  <!-- main body -->
+  <div id="txt" class="text-center"> recommendeds</div>
+
+  <!-- crousel for card -->
+  <div class="card_holder">
+    <div class="row p-0 m-0">
+      <div class="col-lg-4 col-md-6 col-sm-12 py-3 ">
+        <a href="card.html">
+          <div class="card p-0 m-0 " style="width: 100%; ">
+            <div class="img_container p-0 m-0">
+              <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
+              <div class="card-img-overla" >
+                
+                <span class="card-text"> 12345</span>
+                <span class="card-text">20-20-2020</span>
+              </div>
+  
+            </div>
+            <div class="card-body p-0 m-0">
+              <p class="card-text p-3">Ladak</p>
+            </div>
+          </div>
+        </div>
+        </a>
+      <div class="col-lg-4 col-md-6 col-sm-12 py-3 ">
+        <a href="hotels.html">
+        <div class="card p-0 m-0" style="width: 100%; ">
+          <div class="img_container p-0 m-0">
+            <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
+            <div class="card-img-overla">
+              
+              <span class="card-text"> 12345</span>
+              <span class="card-text">20-20-2020</span>
+            </div>
+
+          </div>
+          <div class="card-body p-0 m-0">
+            <p class="card-text p-3">Ladak</p>
+          </div>
+        </div>
+      </a>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 py-3 ">
+        <div class="card p-0 m-0" style="width: 100%; ">
+          <div class="img_container p-0 m-0">
+            <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
+            <div class="card-img-overla">
+              
+              <span class="card-text"> 12345</span>
+              <span class="card-text">20-20-2020</span>
+            </div>
+
+          </div>
+          <div class="card-body p-0 m-0">
+            <p class="card-text p-3">Ladak</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 py-3 ">
+        <div class="card p-0 m-0" style="width: 100%; ">
+          <div class="img_container p-0 m-0">
+            <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
+            <div class="card-img-overla">
+              
+              <span class="card-text"> 12345</span>
+              <span class="card-text">20-20-2020</span>
+            </div>
+
+          </div>
+          <div class="card-body p-0 m-0">
+            <p class="card-text p-3">Ladak</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 py-3 ">
+        <div class="card p-0 m-0" style="width: 100%; ">
+          <div class="img_container p-0 m-0">
+            <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
+            <div class="card-img-overla">
+              
+              <span class="card-text"> 12345</span>
+              <span class="card-text">20-20-2020</span>
+            </div>
+
+          </div>
+          <div class="card-body p-0 m-0">
+            <p class="card-text p-3">Ladak</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 py-3 ">
+        <div class="card p-0 m-0" style="width: 100%; ">
+          <div class="img_container p-0 m-0">
+            <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
+            <div class="card-img-overla">
+              
+              <span class="card-text"> 12345</span>
+              <span class="card-text">20-20-2020</span>
+            </div>
+
+          </div>
+          <div class="card-body p-0 m-0">
+            <p class="card-text p-3">Ladak</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 py-3 ">
+        <div class="card p-0 m-0" style="width: 100%; ">
+          <div class="img_container p-0 m-0">
+            <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
+            <div class="card-img-overla">
+              
+              <span class="card-text"> 12345</span>
+              <span class="card-text">20-20-2020</span>
+            </div>
+
+          </div>
+          <div class="card-body p-0 m-0">
+            <p class="card-text p-3">Ladak</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 py-3 ">
+        <div class="card p-0 m-0" style="width: 100%; ">
+          <div class="img_container p-0 m-0">
+            <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
+            <div class="card-img-overla">
+              
+              <span class="card-text"> 12345</span>
+              <span class="card-text">20-20-2020</span>
+            </div>
+
+          </div>
+          <div class="card-body p-0 m-0">
+            <p class="card-text p-3">Ladak</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 py-3 ">
+        <div class="card p-0 m-0" style="width: 100%; ">
+          <div class="img_container p-0 m-0">
+            <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
+            <div class="card-img-overla">
+              
+              <span class="card-text"> 12345</span>
+              <span class="card-text">20-20-2020</span>
+            </div>
+
+          </div>
+          <div class="card-body p-0 m-0">
+            <p class="card-text p-3">Ladak</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 py-3 ">
+        <div class="card p-0 m-0" style="width: 100%; ">
+          <div class="img_container p-0 m-0">
+            <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
+            <div class="card-img-overla">
+              
+              <span class="card-text"> 12345</span>
+              <span class="card-text">20-20-2020</span>
+            </div>
+
+          </div>
+          <div class="card-body p-0 m-0">
+            <p class="card-text p-3">Ladak</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 py-3 ">
+        <div class="card p-0 m-0" style="width: 100%; ">
+          <div class="img_container p-0 m-0">
+            <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
+            <div class="card-img-overla">
+              
+              <span class="card-text"> 12345</span>
+              <span class="card-text">20-20-2020</span>
+            </div>
+
+          </div>
+          <div class="card-body p-0 m-0">
+            <p class="card-text p-3">Ladak</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 py-3 ">
+        <div class="card p-0 m-0" style="width: 100%; ">
+          <div class="img_container p-0 m-0">
+           
+            <img class="card-img-top img_hover" src="img/tr.jpg" alt="Card image cap">
+            <div class="card-img-overla">
+              
+              <span class="card-text"> 12345</span>
+              <span class="card-text">12-12-2020</span>
+            </div>
+          </div>
+          <div class="card-body p-0 m-0">
+            <p class="card-text p-3">Ladak</p>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+  </div>
+
+  <!-- clients -->
+
+  <div class="container-fluid p-0 m-0 c-container">
+    <div class="text-center c_title">Clients</div>
+    <div class="clints p-0 m-0">
+      <div class="row">
+        <div class="col-3  ">
+
+
+          <img src="img/logo4.png" alt="logo1">
+
+        </div>
+        <div class="col-3 ">
+
+
+          <img src="img/logo4.png" alt="logo1">
+
+        </div>
+        <div class="col-3  ">
+
+
+          <img src="img/logo4.png" alt="logo1">
+
+        </div>
+        <div class="col-3">
+
+
+          <img src="img/logo4.png" alt="logo1">
+
+        </div>
+
+      </div>
+      <div class="row row2">
+        <div class="col-4  ">
+
+
+          <img src="img/logo4.png" alt="logo1">
+
+        </div>
+        <div class="col-4  ">
+
+          <img src="img/logo4.png" alt="logo1">
+
+        </div>
+        <div class="col-4  ">
+
+
+          <img src="img/logo4.png" alt="logo1">
+
+        </div>
+
+
+      </div>
+    </div>
+    <hr>
+    <div class="row m-0 p-0">
+      <div class="col-lg-6 col-sm-12 m-0 p-0 text-white pl-2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, at! Ex minus quo asperiores rem cumque,
+        recusandae cupiditate id dolorum repellendus, eius eos nisi, sint saepe. Natus deleniti distinctio praesentium
+        aspernatur iste nobis dolorum quo necessitatibus vel quam rerum eaque consequatur totam, vero ipsam illo
+        debitis, sequi dicta vitae cupiditate nesciunt! Quia quam, impedit officia assumenda magni id laudantium? Saepe,
+        repellendus atque. Repellat odit alias rerum ab! Aut hic quasi recusandae aliquam a ratione repellat dicta ullam
+        repudiandae non quo maiores eos veniam magni dignissimos saepe deleniti, neque iure et voluptas? Quibusdam,
+        cupiditate recusandae eveniet quo porro nisi magni fugiat corporis qui ea, optio dolorum voluptatem ducimus,
+        laborum sapiente neque facere! Maxime nemo ab fuga expedita unde corrupti! Repudiandae nemo ab natus itaque
+        harum nihil provident perferendis, tenetur nulla molestias quis minima voluptates, commodi ducimus a accusantium
+        facere, cum distinctio officia! Consequatur soluta dolorem odit rerum commodi at suscipit repellat sapiente
+        numquam minima rem id, earum quaerat ducimus natus impedit placeat porro ratione officiis veniam unde nisi
+        perferendis hic molestiae. Aliquam eum assumenda, in quidem incidunt accusamus fugiat officiis pariatur
+        repellendus numquam quia praesentium id corrupti similique minima laudantium, culpa accusantium nobis non minus
+        ullam quas quibusdam fuga. Vel, aperiam.
+      </div>
+      <div class="col-lg-6 col-sm-12 m-0 p-0 band_logo_2">
+        <img src="img/logo2.png" class="img-fluid m-0 p-0" alt="">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer part -->
+  <footer>
+    <div class="f_holder">
+      <div class="row p-0 m-0">
+        <div class="col-lg-3 col-md-3 col-sm-12 p-0 m-0 ">
+          <p class="f_header">
+            Company name
+          </p>
+          <p class="f_body"><a href="#">About</a></p>
+          <p class="f_body"><a href="#">Careers</a></p>
+          <p class="f_body"><a href="#">Blog</a></p>
+          <p class="f_body"><a href="#">Testimonial</a></p>
+          <p class="f_body"><a href="#">Guides</a></p>
+          <p class="f_body"><a href="#">Visa</a></p>
+          <p class="f_body"><a href="#">Press</a></p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 p-0 m-0">
+          <p class="f_header">
+            Policy
+          </p>
+          <p class="f_body"><a href="#">Frequently Asked Questions</a></p>
+          <p class="f_body"><a href="#">Terms & Conditions</a></p>
+          <p class="f_body"><a href="#">Privacy</a></p>
+          <p class="f_body"><a href="#">Cancellations</a></p>
+          <p class="f_body"><a href="#">Sitemap</a></p>
+          <p class="f_body"><a href="#">Contact us</a></p>
+
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 p-0 m-0">
+          <p class="f_header">
+            Tlak to us
+          </p>
+          <p class="f_body"><a href="#"><i class="far fa-envelope-open"></i>abc@email.com</a></p>
+          <p class="f_body"><a href="#"><i class="fas fa-phone-alt"></i>1234567890</a></p>
+          <p class="f_header">
+            Talk to us
+          </p>
+          <input type="email" name="email" placeholder="Enter Email">
+
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 p-0 m-0">
+          <p class="f_header">
+            Social
+          </p>
+          <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+          <p class="f_body"><a href="#">Travel Troops Global Private Ltd.</a></p>
+          <p class="f_body"><a href="#">© 2020 all rights reserved.</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade m-0 p-0" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">				
+                    <h4 class="modal-title">Sign In</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <div class="input-group">
+                                
+                                <input type="text" class="form-control mx-5" name="username" placeholder="Username" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                
+                                <input type="text" class="form-control mx-5" name="password" placeholder="Password" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group d-flex justify-content-center align-items-center">
+                            <button type="submit" class="btn btn-outline-danger btn-block w-25 ">Sign In</button>
+                        </div>
+                        <hr>
+                          <h5 class="text-center mb-5" style="font-size: 1.8rem;">or</h5>
+                        <div class="icons">
+                            <a href="#" class="login100-social-item bg3">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="login100-social-item bg3 gmail">
+                                <img src="img/gmail.png" alt="">
+                            </a>
+                            <a href="#" class="login100-social-item bg3">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        <p class="hint-text" style="font-size: 1.3rem;"><a href="#">Forgot Password?</a></p>
+                    </form>
+                </div> 
+                <div class="modal-footer" style="font-size: 1.3rem;">Don't have an account? <button class="btn btn-danger ml-2 " data-toggle="modal" data-target="#exampleModal2" id="forlogin">Create one</a></div>
+            </div>
+            </div>
+        </div>
+    </div>
+  <div class="modal fade m-0 p-0" id="exampleModal2" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">				
+                    <h4 class="modal-title">Sign Up</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <div class="input-group">
+                                
+                                <input type="text" class="form-control mx-5" name="username" placeholder="Username" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                
+                                <input type="email" class="form-control mx-5" name="email" placeholder="Email id" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                
+                                <input type="nnumber" class="form-control mx-5" name="mobile" placeholder="mobile no" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                
+                                <input type="text" class="form-control mx-5" name="password" placeholder="Password" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                
+                                <input type="text" class="form-control mx-5" name="password" placeholder="Confram Password" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group d-flex justify-content-center align-items-center">
+                            <button type="submit" class="btn btn-outline-danger btn-block w-25 ">Sign UP</button>
+                        </div>
+                        <hr>
+                          <h5 class="text-center mb-5" style="font-size: 1.8rem;">or</h5>
+                          <h5 class="text-center mb-5" style="font-size: 1.6rem;">Signup with</h5>
+                        <div class="icons">
+                            <a href="#" class="login100-social-item bg3">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="login100-social-item bg3 gmail">
+                                <img src="img/gmail.png" alt="">
+                            </a>
+                            <a href="#" class="login100-social-item bg3">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="modal-footer" style="font-size: 1.3rem;"> have an account ? <button class="btn btn-danger ml-2" data-toggle="modal" data-target="#exampleModal" id="forsignup" >Login Here</a></div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- Optional JavaScript -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+
+    $(document).ready(function () {
+      $('#forlogin').click(function(){
+        $('#exampleModal').modal('hide');
+      });
+      $('#forsignup').click(function(){
+        $('#exampleModal2').modal('hide');
+      });
+      $(window).scroll(function () {
+        $("nav").toggleClass("scrolled", $(this).scrollTop() > 100);
+        $("w3-sidebar").toggleClass("w3-sidebarab", $(this).scrollTop() > 300);
+      });
+     
+
+    });
+    function hovereffect() {
+      let dis = document.getElementsByClassName("onhover1");
+
+      for (let i = 0; i < dis.length; i++) {
+        dis[i].style.display = "inline";
+
+
+      }
+
+
+
+    }
+    function hoverout() {
+      dis = document.getElementsByClassName("onhover1");
+
+      for (let i = 0; i < dis.length; i++) {
+        dis[i].style.display = "none";
+
+      }
+    }
+
+    function w3_open() {
+
+      dis = document.getElementsByClassName("onhover1");
+      let atag = document.getElementsByClassName("w3-button  ");
+      let na = document.getElementsByClassName("w3-sidebar");
+      if (dis[0].style.display == "none") {
+        for (let i = 0; i < dis.length; i++) {
+          dis[i].style.display = "inline";
+          atag[i].style.display = "inline";
+
+          if (screen.width <= 776) {
+            na[0].style.background = "white";
+          }
+        }
+      } else {
+        for (let i = 0; i < dis.length; i++) {
+          dis[i].style.display = "none";
+          if (screen.width <= 776) {
+            atag[i].style.display = "none";
+            na[0].style.background = "transparent";
+          }
+
+        }
+      }
+
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+
+    
+  </script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!-- main body contenet -->
+    <div class="container card_main_container ">
+        <div class="row">
+            <!-- travel details part -->
+            <div class="col-lg-9 col-md-9 col-sm-12">
+                <div class="container-fluid card_galary p-0 m-0">
+                    <video controls>
+                        <source src="video/Nature-clip short_nikon D5100.mp4" type="video/mp4">
+
+
+                    </video>
+                    <img src="img/banner.jpg" alt="gallary">
+                </div>
+                <h2 id="trip_id">Thailand Road Trip</h2>
+                <hr>
+                <div class="trip_type">
+                    <div class="car_type"> Car type</div>
+                    <div class="car_type"> no of persons</div>
+                    <div class="car_type"> No of persons</div>
+                </div>
+                <hr>
+                <div class="itinerary">
+                    <span class="Visa">Itinerary</span>
+                    <span class="Visa">Visa Policies</span>
+                    <span class="Visa"> Similar Pakages</span>
+                </div>
+                <hr>
+                <div class="activity">
+                    <div class="plan">Day plan</div>
+                    <div class="plan">flights</div>
+                    <div class="plan">Car</div>
+                    <div class="plan">Hotels</div>
+                    <div class="plan">Activity</div>
+                    <div class="plan">Events</div>
+                </div>
+            </div>
+            <!-- price & rootdetails part -->
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="row card_price__main">
+                    <div class="col-12 card_price">
+                        <div class="card_price__big mb-1">
+                            <div class="car_old_price">₹ 25000</div>
+                            <div class="card_actual_price">₹ 18000 <sub>per person</sub></div>
+                            <div class="card_taxex">(Taxes are not included in this price)</div>
+                        </div>
+                        <div class="card_price__small mt-1 mb-5"> <span>8N /9D 1 Adult </span></div>
+                        <button type="button" class="btn btn-outline-danger">Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

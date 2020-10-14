@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="mycss.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+
+    <title>Hello, world!</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <!-- navigation panel -->
+
+    <nav class="navbar navbar-expand-lg navbar-light nav_bg bg-dark">
+        <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" id="mySidebar"
+            onmouseenter="hovereffect()" onmouseleave="hoverout()">
+
+            <a href="#" class="w3-bar-item w3-button"><i class="fas mx-3  fa-address-book"></i> <span class="onhover1"
+                    style="display:none;">Link 1</span> </a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fas mx-3  fa-address-book"></i> <span class="onhover1"
+                    style="display:none;">Link 1</span></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fas mx-3  fa-address-book"></i> <span class="onhover1"
+                    style="display:none;">Link 1</span></a>
+        </div>
+        <span class=" " onclick="w3_open()">
+            <i class="fas fa-bars mx-3 btn btn-outline-danger"></i>
+            <a href="index.html"><span class="nav-brand">Brand Name</span></a>
+        </span>
+        
+            
+        
+
+    </nav>
+
+    <!-- navigation panel end -->
+    
+
+    <div style="display: block;">
+        <div class="card_container container">
+            <div class="card_galary row ">
+                <div class="col-lg-4 col-12 ">
+                    <video controls>
+                        <source src="video/Nature-clip short_nikon D5100.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="col-lg-4 col-12 pl-0  " style="padding-right: 3.5rem;">
+                    <img src="img/banner.jpg" alt="">
+                </div>
+                <div class="col-lg-2 col-12 card_price ">
+                    <div class="card_price__big mb-1">
+                        <div class="car_old_price">₹ 25000</div>
+                        <div class="card_actual_price">₹ 18000 <sub>per person</sub></div>
+                        <div class="card_taxex">(Taxes are not included in this price)</div>
+                    </div>
+                    <div class="card_price__small mt-1 mb-5"> <span>8N /9D 1 Adult </span></div>
+                    <button type="button" class="btn btn-outline-danger">Buy now</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid for_trip row  ">
+        <div class="col-lg-9 col-12">
+            <p>2N Puducherry . 1N Mahabalipuram</p>
+            <h2>Thiland Road Trip</h2>
+            <hr>
+            <div class="trip_type">
+                <div class="car_type"><select name="" id="">
+                        <option value="1">Car Type</option>
+                        <option value="1">Car 1</option>
+                        <option value="1">Car 2</option>
+                        <option value="1">Car 3</option>
+                        <option value="1">Car 4</option>
+                    </select></div>
+
+                <div class="car_type"><select name="" id="">
+                        <option value="1">NO of Persons</option>
+                        <option value="1">1</option>
+                        <option value="1">2</option>
+                        <option value="1">3</option>
+                        <option value="1">4</option>
+                        <option value="1">5</option>
+                        <option value="1">6</option>
+                        <option value="1">7</option>
+                        <option value="1">8</option>
+                        <option value="1">9</option>
+                        <option value="1">10</option>
+                    </select></div>
+                <div class="car_type"> No of persons</div>
+            </div>
+
+            <hr>
+            <div class="itinerary">
+
+                <div class="Visa active2" onclick="savesubcat()" data-toggle="collapse" data-target="#home" id="visa1">
+                    Itinerary
+                </div>
+                <div class="Visa" onclick="savesub()" data-toggle="collapse" data-target="#policy" id="visa2">Visa
+                    Policies</div>
+                <div class="Visa" onclick="savesubcat()" id="visa3">Similar Pakages</div>
+            </div>
+            <hr>
+            <div class="activity ">
+                <div class="plan active" onclick="savesubcat()" id="flight6">Day plan</div>
+                <div class="plan" onclick="savesubcat()" id="flight">flights</div>
+                <div class="plan" onclick="savesubcat()" id="flight2">Car</div>
+                <div class="plan" onclick="savesubcat()" id="flight3">Hotels</div>
+                <div class="plan" onclick="savesubcat()" id="flight4">Activity</div>
+                <div class="plan" onclick="savesubcat()" id="flight5">Events</div>
+            </div>
+
+            <div class="row datacard">
+
+                <div class="col-lg-12 col-12 cardboxbody" id="home">
+                    <div class="datacardbox">
+                        <div class="header row ">
+                            <div class="col-lg-6 col-12">
+                                <span class="left"> Day1 Bangkok</span>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <span class="right">6 Mar 2021,Sun</span>
+                            </div>
+                        </div>
+                        <div class=" row datacardbody">
+                            <div class="col-lg-4 col-12">
+                                <div class="dataimg">
+                                    <img src="img/banner.jpg" alt="image">
+                                </div>
+                            </div>
+
+                            <div class="details col-lg-4 col-12 ">
+                                <p class="hotel_name"> ABC Hotel Name</p>
+                                <p class="loc">Location</p>
+
+                                <p class="dateH">Date</p>
+                                <p class="date">Sat,12 Jun 2021 - Mon,14 Jun 2021</p>
+                            </div>
+                            <div class="dataLastpart col-lg-4 col-12">
+                                <div class="highlight p-0 m-0">
+                                    <p class="mb-0">Activity</p>
+                                    <ul>
+                                        <li>activity1</li>
+                                        <li>activity2</li>
+                                        <li>activity3</li>
+                                    </ul>
+                                </div>
+                                <hr class="p-0 m-0">
+                                <div class="highlight">
+                                    <p class="mb-0">Activity</p>
+                                    <ul>
+                                        <li>activity1</li>
+                                        <li>activity2</li>
+                                        <li>activity3</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="datacardbox">
+                        <div class="header row ">
+                            <div class="col-lg-6 col-12">
+                                <span class="left"> Day1 Bangkok</span>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <span class="right">6 Mar 2021,Sun</span>
+                            </div>
+                        </div>
+                        <div class=" row datacardbody">
+                            <div class="col-lg-4 col-12">
+                                <div class="dataimg">
+                                    <img src="img/banner.jpg" alt="image">
+                                </div>
+                            </div>
+
+                            <div class="details col-lg-4 col-12 ">
+                                <p class="hotel_name"> ABC Hotel Name</p>
+                                <p class="loc">Location</p>
+
+                                <p class="dateH">Date</p>
+                                <p class="date">Sat,12 Jun 2021 - Mon,14 Jun 2021</p>
+                            </div>
+                            <div class="dataLastpart col-lg-4 col-12">
+                                <div class="highlight p-0 m-0">
+                                    <p class="mb-0">Activity</p>
+                                    <ul>
+                                        <li>activity1</li>
+                                        <li>activity2</li>
+                                        <li>activity3</li>
+                                    </ul>
+                                </div>
+                                <hr class="p-0 m-0">
+                                <div class="highlight">
+                                    <p class="mb-0">Activity</p>
+                                    <ul>
+                                        <li>activity1</li>
+                                        <li>activity2</li>
+                                        <li>activity3</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 " id="policy" style="display: none;">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corporis quasi explicabo error
+                    voluptatum
+                    doloremque unde, numquam aspernatur impedit eaque accusantium modi cum, sint asperiores a. Obcaecati
+                    voluptatum est nobis amet aut nam placeat. Officiis ut adipisci, omnis, maiores voluptate eligendi
+                    doloribus
+                    obcaecati nulla expedita suscipit vero ipsa rem! Pariatur est excepturi, repellendus atque facilis
+                    et nihil
+                    aspernatur repellat aperiam sequi nisi in dolore debitis quo sint sunt distinctio ullam placeat
+                    commodi
+                    sapiente, eius molestias nemo. Quae ullam sunt sint libero perferendis. Exercitationem fuga a
+                    aperiam
+                    eligendi veritatis, alias molestiae odit sapiente cupiditate? Voluptatum odio aliquam hic veniam
+                    voluptatibus cumque.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corporis quasi explicabo error
+                    voluptatum
+                    doloremque unde, numquam aspernatur impedit eaque accusantium modi cum, sint asperiores a. Obcaecati
+                    voluptatum est nobis amet aut nam placeat. Officiis ut adipisci, omnis, maiores voluptate eligendi
+                    doloribus
+                    obcaecati nulla expedita suscipit vero ipsa rem! Pariatur est excepturi, repellendus atque facilis
+                    et nihil
+                    aspernatur repellat aperiam sequi nisi in dolore debitis quo sint sunt distinctio ullam placeat
+                    commodi
+                    sapiente, eius molestias nemo. Quae ullam sunt sint libero perferendis. Exercitationem fuga a
+                    aperiam
+                    eligendi veritatis, alias molestiae odit sapiente cupiditate? Voluptatum odio aliquam hic veniam
+                    voluptatibus cumque.
+                </p>
+            </div>
+            <div class="col-12 " id="similar" style="display: none;">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corporis quasi explicabo error
+                    voluptatum
+
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corporis quasi explicabo error
+                    voluptatum
+                    .
+                </p>
+            </div>
+            <div class="col-12 " id="flig" style="display: none;">
+                <p>
+                    flights0
+                </p>
+                <p>
+                    flights0
+                </p>
+            </div>
+            <div class="col-12 " id="flig1" style="display: none;">
+                <p>
+                    flights2
+                </p>
+                <p>
+                    flights2
+                </p>
+            </div>
+            <div class="col-12 " id="flig2" style="display: none;">
+                <p>
+                    flights1
+                </p>
+                <p>
+                    flights1
+                </p>
+            </div>
+            <div class="col-12 " id="flig3" style="display: none;">
+                <p>
+                    flight3
+                </p>
+                <p>
+                    flights3
+                </p>
+            </div>
+            <div class="col-12 " id="flig4" style="display: none;">
+                <p>
+                    flights4
+                </p>
+                <p>
+                    flights4
+                </p>
+            </div>
+
+        </div>
+        <div class="col-lg-3 route " style="
+        position: fixed;
+        right: 0rem;
+    ">
+            <h1>Route Overview</h1>
+            <div class="routemap">
+
+                <section class="timeline-content">
+                    <div class="item">
+                        <span>first Stop</span>
+                    </div>
+                    <div class="item">
+                        <span>first Stop</span>
+                    </div>
+                    <div class="item">
+                        <span>first Stop</span>
+                    </div>
+                    <div class="item">
+                        <span>first Stop</span>
+                    </div>
+                    <div class="item">
+                        <span>first Stop</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                $("nav").toggleClass("scrolled", $(this).scrollTop() > 100);
+                $("w3-sidebar").toggleClass("w3-sidebarab", $(this).scrollTop() > 300);
+            });
+            // $('.active').click(function () {
+            //     $('.datacard').collapse('toggle');
+            // });
+
+            if (screen.width >= 776) {
+                $(".card_price").addClass("fixedposition");
+                $(".card_container").addClass("card_container_pc");
+                $(".for_trip").addClass("for_trip_pc");
+            } else {
+                $(".card_container").addClass("card_container_mobile");
+
+                $(".route")[0].style.display = "none";
+            }
+
+            $(".activity .plan").on('click', function () {
+                $(this).siblings().removeClass('active');
+                $(this).siblings().removeClass('active');
+                $(this).addClass('active');
+            });
+            $(".itinerary .Visa").on('click', function () {
+                $(this).siblings().removeClass('active2');
+
+                $(this).addClass('active2');
+
+            });
+
+            $("#visa1").on("click", function () {
+                $(".cardboxbody").css("display", "block");
+                $(".activity").css("display", "flex");
+                $("#policy").css("display", "none");
+                $("#similar").css("display", "none");
+                $("#flig").css("display", "none");
+                $("#flig1").css("display", "none");
+                $("#flig2").css("display", "none");
+                $("#flig3").css("display", "none");
+                $("#flig4").css("display", "none");
+
+
+            })
+            $("#flight6").on("click", function () {
+                $(".cardboxbody").css("display", "block");
+
+                $("#policy").css("display", "none");
+
+
+            })
+            $("#visa2").on("click", function () {
+                $(".cardboxbody").css("display", "none");
+                $(".activity").css("display", "none");
+                $("#policy").css("display", "block");
+                $("#similar").css("display", "none");
+                $("#flig").css("display", "none");
+                $("#flig1").css("display", "none");
+                $("#flig2").css("display", "none");
+                $("#flig3").css("display", "none");
+                $("#flig4").css("display", "none");
+
+            })
+            $("#visa3").on("click", function () {
+                $(".cardboxbody").css("display", "none");
+                $(".activity").css("display", "none");
+                $("#policy").css("display", "none");
+                $("#similar").css("display", "block");
+                $("#flig").css("display", "none");
+                $("#flig1").css("display", "none");
+                $("#flig2").css("display", "none");
+                $("#flig3").css("display", "none");
+                $("#flig4").css("display", "none");
+
+            })
+
+            $("#flight").on("click", function () {
+                $(".cardboxbody").css("display", "none");
+                $("#similar").css("display", "none");
+                $("#flig").css("display", "block");
+                $("#flig1").css("display", "none");
+                $("#flig1").css("display", "none");
+                $("#flig2").css("display", "none");
+                $("#flig3").css("display", "none");
+                $("#flig4").css("display", "none");
+
+            })
+            $("#flight2").on("click", function () {
+                $(".cardboxbody").css("display", "none");
+                $("#flig").css("display", "none");
+                $("#flig1").css("display", "block");
+                $("#flig2").css("display", "none");
+                $("#flig3").css("display", "none");
+                $("#flig4").css("display", "none");
+                $("#similar").css("display", "none");
+            })
+            $("#flight6").on("click", function () {
+                $(".cardboxbody").css("display", "block");
+                $("#flig").css("display", "none");
+                $("#flig1").css("display", "none");
+                $("#flig2").css("display", "none");
+                $("#flig3").css("display", "none");
+                $("#flig4").css("display", "none");
+                $("#similar").css("display", "none");
+
+            })
+            $("#flight3").on("click", function () {
+                $(".cardboxbody").css("display", "none");
+                $("#flig").css("display", "none");
+                $("#flig1").css("display", "none");
+                $("#flig2").css("display", "block");
+                $("#flig3").css("display", "none");
+                $("#flig4").css("display", "none");
+                $("#similar").css("display", "none");
+
+            })
+            $("#flight4").on("click", function () {
+                $(".cardboxbody").css("display", "none");
+                $("#flig").css("display", "none");
+                $("#flig1").css("display", "none");
+                $("#flig2").css("display", "none");
+                $("#flig3").css("display", "block");
+                $("#flig4").css("display", "none");
+                $("#similar").css("display", "none");
+
+            })
+            $("#flight5").on("click", function () {
+                $(".cardboxbody").css("display", "none");
+                $("#flig").css("display", "none");
+                $("#flig1").css("display", "none");
+                $("#flig2").css("display", "none");
+                $("#flig3").css("display", "none");
+                $("#flig4").css("display", "block");
+                $("#similar").css("display", "none");
+
+            })
+
+        });
+        function savesubcat() {
+            return null;
+        }
+
+        function hovereffect() {
+            let dis = document.getElementsByClassName("onhover1");
+
+            for (let i = 0; i < dis.length; i++) {
+                dis[i].style.display = "inline";
+
+
+            }
+
+
+
+        }
+        function hoverout() {
+            dis = document.getElementsByClassName("onhover1");
+
+            for (let i = 0; i < dis.length; i++) {
+                dis[i].style.display = "none";
+
+            }
+        }
+
+        function w3_open() {
+
+            dis = document.getElementsByClassName("onhover1");
+            let atag = document.getElementsByClassName("w3-button  ");
+            let na = document.getElementsByClassName("w3-sidebar");
+            if (dis[0].style.display == "none") {
+                for (let i = 0; i < dis.length; i++) {
+                    dis[i].style.display = "inline";
+                    atag[i].style.display = "inline";
+
+                    if (screen.width <= 776) {
+                        na[0].style.background = "white";
+                    }
+                }
+            } else {
+                for (let i = 0; i < dis.length; i++) {
+                    dis[i].style.display = "none";
+                    if (screen.width <= 776) {
+                        atag[i].style.display = "none";
+                        na[0].style.background = "transparent";
+                    }
+
+                }
+            }
+
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+
+
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
